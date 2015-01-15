@@ -4,6 +4,10 @@ Detect AdBlock and show a message to users.
 ## Demo
 Works well on both most popular browser :white_check_mark:
 
+Demo Online: https://fb01-j2team.rhcloud.com/apps/nghe-gi-bay-gio/
+
+Screenshot:
+
 ![AdBlock Checker](http://i.imgur.com/nY0OOdj.png)
 
 ## How to use
