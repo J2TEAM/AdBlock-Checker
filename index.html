@@ -1,0 +1,117 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Adblock Checker</title>
+  <meta name="description" content="Detect AdBlock (working on Firefox and Chrome browser) and show a message to users.">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Adblock Checker</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Detect AdBlock (working on Firefox and Chrome browser) and show a message to users.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/J2TeaM/AdBlock-Checker/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/J2TeaM/AdBlock-Checker/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/J2TeaM/AdBlock-Checker" class="code">View Adblock Checker on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<hr>
+
+<p>Works well on both most popular browser <img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png" height="20" width="20" align="absmiddle"></p>
+
+<p>Demo Online: <a href="https://fb01-j2team.rhcloud.com/apps/nghe-gi-bay-gio/">https://fb01-j2team.rhcloud.com/apps/nghe-gi-bay-gio/</a></p>
+
+<p>Screenshot:</p>
+
+<p><img src="http://i.imgur.com/nY0OOdj.png" alt="AdBlock Checker"></p>
+
+<h2>
+<a id="how-to-use" class="anchor" href="#how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use</h2>
+
+<h3>
+<a id="step-1-css" class="anchor" href="#step-1-css" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step 1: CSS</h3>
+
+<p>Add before <code>&lt;/head&gt;</code>:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s1"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s1"><span class="pl-pds">"</span>adblock-checker.css<span class="pl-pds">"</span></span> /&gt;</pre></div>
+
+<h3>
+<a id="step-2-javascript" class="anchor" href="#step-2-javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step 2: Javascript</h3>
+
+<p>Add before <code>&lt;/body&gt;</code>:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="pl-k">&lt;</span>script src<span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>advertisement.js<span class="pl-pds">"</span></span><span class="pl-k">&gt;&lt;</span>/script<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>script src<span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>adblock-checker.js<span class="pl-pds">"</span></span><span class="pl-k">&gt;&lt;</span>/script<span class="pl-k">&gt;</span>
+<span class="pl-k">&lt;</span>script type<span class="pl-k">=</span><span class="pl-s1"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+    adb_checker({
+        url<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>http://www.afreesms.com/adblock/disabling/<span class="pl-pds">'</span></span>, <span class="pl-c">// Link to help users disable AdBlock</span>
+        redirect<span class="pl-k">:</span> <span class="pl-c1">false</span>, <span class="pl-c">// True to redirect user to the above url</span>
+        warning<span class="pl-k">:</span> {
+            text<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>Please disable AdBlock!<span class="pl-pds">'</span></span>, <span class="pl-c">// Message to the users</span>
+            button<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>Help me to disable!<span class="pl-pds">'</span></span>
+        }
+    });
+<span class="pl-k">&lt;</span>/script<span class="pl-k">&gt;</span></pre></div>
+
+<h2>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>If you have an ideas or want to report a bug, please contact me:</p>
+
+<ul>
+<li>Email: <a href="mailto:junookyo@gmail.com">junookyo@gmail.com</a>
+</li>
+<li>Blog: <a href="http://junookyo.blogspot.com/">http://junookyo.blogspot.com/</a>
+</li>
+<li>Facebook: <a href="https://www.facebook.com/JunoOkyoBlog">https://www.facebook.com/JunoOkyoBlog</a>
+</li>
+<li>Twitter: <a href="https://twitter.com/juno_okyo">https://twitter.com/juno_okyo</a>
+</li>
+</ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/J2TeaM" class="avatar"><img src="https://avatars1.githubusercontent.com/u/5250117?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/J2TeaM">J2TeaM</a> maintains <a href="https://github.com/J2TeaM/AdBlock-Checker">Adblock Checker</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/J2TeaM/AdBlock-Checker/tarball/master" class="tar">tar</a><a href="https://github.com/J2TeaM/AdBlock-Checker/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
