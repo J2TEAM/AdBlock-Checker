@@ -27,13 +27,12 @@ function adb_checker(config) {
 }
 
 function adb_warning(url, text, button) {
-    var html = '<div class="smoke-base smoke-visible smoke-alert">';
-    html += '<div class="smokebg"></div><div class="dialog smoke ">';
+    var html = '<div class="smoke-base smoke-visible smoke-alert"><div class="smokebg"></div><div class="dialog smoke ">';
     html += '<div class="dialog-inner">' + text;
     if ((img = getHelpImg()) != -1) {
-        html += '<br /><img id="adb_helper" src="' + img + '" />';
+        html += '<br /><img src="' + img + '" alt="AdBlock Checker by Juno_okyo" />';
     } else {
-        html += '<div class="dialog-buttons"><a href="javascript:how_to_disable_adb();">' + button + '</a></div>';
+        html += '<div class="dialog-buttons"><a href="' + url + '">' + button + '</a></div>';
     }
     html += '</div></div></div>';
     var div = document.createElement('div');
