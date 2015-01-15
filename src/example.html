@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>AdBlock Checker by Juno_okyo</title>
+	<link rel="stylesheet" href="adblock-checker.css" />
+</head>
+<body>
+	<h1>Demo</h1>
+
+	<script src="advertisement.js"></script>
+	<script src="adblock-checker.js"></script>
+	<script type="text/javascript">
+		adb_checker({
+			url: 'http://www.afreesms.com/adblock/disabling/',
+			redirect: false,
+			warning: {
+				text: 'Please disable AdBlock!',
+				button: 'Help me to disable!'
+			}
+		});
+	</script>
+</body>
+</html>
